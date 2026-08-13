@@ -3,269 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Kim — IT Administrator specializing in M365, Network & Firewall Administration, and ELV Systems.">
-  <meta name="author" content="Kim">
-  <meta property="og:title" content="Kim — IT & ELV Systems Administrator">
+  <meta name="description" content="Portfolio of Omer Eisa Musa — IT Administrator specializing in M365, Network & Firewall Administration, and ELV Systems.">
+  <meta name="author" content="Omer Eisa Musa">
+  <meta property="og:title" content="Omer Eisa Musa — IT & ELV Systems Administrator">
   <meta property="og:description" content="Microsoft 365 Administration, FortiGate Networking, ELV Systems (CCTV, Access Control), and ERP Support.">
   <meta property="og:type" content="website">
-  <title>Kim — IT & ELV Systems Administrator</title>
+  <title>Omer Eisa Musa — IT & ELV Systems Administrator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <style>
-:root{
-  --bg:#050b14;--bg2:#081321;--panel:#0d1928;--text:#eef5ff;--muted:#8fa1b7;
-  --blue:#1685ff;--blue2:#52a8ff;--line:rgba(255,255,255,.09);--white:#fff;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,sans-serif;background:#f7f9fc;color:#111b2a;line-height:1.65}
-a{color:inherit;text-decoration:none}
-.noise{position:fixed;inset:0;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");z-index:20}
-.site-header{position:fixed;top:0;left:0;right:0;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;z-index:10;background:rgba(5,11,20,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07);color:#fff}
-.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:16px}
-.brand-mark{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--blue);border-radius:10px;color:var(--blue2);font-family:"Space Grotesk";font-weight:700}
-.nav{display:flex;gap:27px;font-size:13px;color:#a9b7c8}
-.nav a{padding:27px 0;position:relative}.nav a:hover,.nav a.active{color:#fff}.nav a.active:after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--blue)}
-.header-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:8px;padding:11px 17px;font-size:13px;font-weight:600}
-.header-cta{border:1px solid var(--blue);color:#72b8ff}.header-cta:hover{background:var(--blue);color:#fff}
-.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:24px}
-.section{padding:110px 7%;position:relative}
-.hero{min-height:760px;background:radial-gradient(circle at 76% 40%,rgba(12,110,255,.19),transparent 25%),linear-gradient(135deg,#040a12,#071423 70%,#04101d);color:#fff;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;overflow:hidden;padding-top:120px}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(65,139,220,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(65,139,220,.07) 1px,transparent 1px);background-size:55px 55px;mask-image:linear-gradient(to bottom,black,transparent)}
-.hero-copy{position:relative;z-index:2;max-width:680px}
-.eyebrow,.kicker{color:#62b2ff;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-.pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:#41e58a;margin-right:8px;box-shadow:0 0 12px #41e58a}
-.hero .kicker{margin-top:25px;color:#fff;text-transform:none;letter-spacing:0;font-size:17px}
-h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.1}
-h1{font-size:clamp(52px,7vw,88px);letter-spacing:-.05em;margin:5px 0 15px}
-h1 span,h2 em{color:var(--blue2);font-style:normal}
-.hero h2{font-size:21px;font-weight:500;color:#d6e4f4}.hero h2 i{font-style:normal;color:#4b8ac5;margin:0 7px}
-.hero-text{max-width:610px;color:#9eb0c4;margin:23px 0 30px;font-size:16px}
-.hero-actions{display:flex;gap:12px}.btn.primary{background:var(--blue);color:#fff;box-shadow:0 10px 35px rgba(22,133,255,.24)}.btn.secondary{border:1px solid #40536b;color:#e9f2ff}.btn.secondary:hover{border-color:var(--blue)}
-.socials{display:flex;gap:12px;margin-top:26px}.socials a{display:grid;place-items:center;width:34px;height:34px;border:1px solid #324459;border-radius:8px;font-size:11px;font-weight:700;color:#b7c8dc}
-.hero-visual{height:570px;position:relative;display:grid;place-items:center}
-.avatar-placeholder{width:355px;height:460px;border-radius:190px 190px 35px 35px;border:1px solid rgba(79,163,255,.35);background:linear-gradient(145deg,#10243a,#07111e);box-shadow:0 0 80px rgba(20,126,255,.15);display:grid;place-items:center;align-content:center;gap:10px;position:relative;overflow:hidden}
-.avatar-placeholder:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(19,124,255,.18);filter:blur(3px)}
-.avatar-initials{font-family:"Space Grotesk";font-size:90px;font-weight:700;color:#62b2ff;z-index:1}
-.avatar-caption{font-size:10px;letter-spacing:.2em;color:#5f7a97;z-index:1}
-.orb{position:absolute;border-radius:50%;border:1px solid rgba(61,153,255,.15)}.orb-a{width:510px;height:510px}.orb-b{width:680px;height:680px}
-.floating-card{position:absolute;display:flex;gap:12px;align-items:center;padding:12px 15px;background:rgba(7,17,29,.86);border:1px solid rgba(61,150,255,.3);border-radius:11px;box-shadow:0 15px 40px rgba(0,0,0,.22);backdrop-filter:blur(12px);min-width:190px}
-.floating-card .icon{color:#4ea8ff;font-size:21px}.floating-card strong{display:block;font-size:12px}.floating-card small{display:block;color:#7890aa;font-size:10px}.card-a{top:150px;right:10px}.card-b{bottom:100px;left:5px}.card-c{bottom:30px;right:30px}
-.section-heading{max-width:750px;margin-bottom:48px}.section-heading>span{font-size:11px;letter-spacing:.15em;font-weight:800;color:#258cf5}.section-heading h2{font-size:48px;letter-spacing:-.04em;margin-top:10px}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.about-copy{font-size:17px;color:#556579}.about-copy p+p{margin-top:18px}.about-copy strong{color:#13233a}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}.stat{padding:28px;border:1px solid #e2e8f0;border-radius:16px;background:#fff;box-shadow:0 15px 35px rgba(18,44,76,.06)}.stat strong{display:block;font-family:"Space Grotesk";font-size:35px;color:#172438}.stat span{font-size:12px;color:#75849a}
-.dark-section{background:var(--bg);color:#fff}.dark-section .section-heading h2{color:#fff}.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.skill-card{padding:28px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(17,32,49,.9),rgba(8,18,31,.85));border-radius:16px;min-height:260px}.skill-icon{font-size:27px;color:#4ea8ff;margin-bottom:24px}.skill-card h3{font-size:18px;margin-bottom:10px}.skill-card p{color:#899db4;font-size:13px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}.tags span{font-size:10px;padding:5px 8px;border:1px solid #243a52;border-radius:99px;color:#9fb6ce}
-.tech-strip{margin-top:50px;border-top:1px solid var(--line);padding-top:25px;display:flex;align-items:center;gap:30px}.tech-strip>span{font-size:10px;color:#5e7893;letter-spacing:.15em}.tech-list{display:flex;flex-wrap:wrap;gap:25px;color:#d5e4f3;font-family:"Space Grotesk";font-size:14px}
-.experience{background:#fff}.timeline{max-width:1000px;margin:auto}.timeline-item{display:grid;grid-template-columns:190px 1fr;gap:35px;position:relative;padding:0 0 48px 30px;border-left:1px solid #dce5ef}.timeline-item:last-child{padding-bottom:0}.timeline-dot{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--blue);left:-5px;top:5px;box-shadow:0 0 0 5px #eaf4ff}.timeline-meta{font-size:11px;font-weight:800;color:#4b8ccf;letter-spacing:.08em}.timeline-main h3{font-size:23px}.company{color:#697b91;font-weight:600;margin:7px 0 16px}.timeline-main ul{padding-left:17px;color:#66768a;font-size:13px}.timeline-main li+li{margin-top:7px}
-.education{background:#f5f8fc}.education-card{display:flex;justify-content:space-between;align-items:center;padding:30px;border:1px solid #e0e7f0;background:#fff;border-radius:16px;max-width:900px}.year{font-size:11px;color:#258cf5;font-weight:800}.education-card h3{font-size:24px;margin:6px 0}.education-card p{color:#728197}.education-card>strong{font-family:"Space Grotesk";font-size:26px}
-.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.cert-card{display:flex;align-items:center;gap:18px;padding:20px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.03)}.cert-card>span{display:grid;place-items:center;width:48px;height:48px;border-radius:12px;background:#102d4a;color:#58adff;font-size:11px;font-weight:800}.cert-card h3{font-size:15px}.cert-card p{font-size:12px;color:#8397ad}.small-note{margin-top:22px;color:#637b95;font-size:12px}
-.contact{background:#f5f8fc}.contact-card{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center;background:linear-gradient(135deg,#06111e,#0b2034);border-radius:24px;padding:65px;color:#fff;overflow:hidden;position:relative}.contact-card:after{content:"";position:absolute;width:330px;height:330px;border:1px solid rgba(74,167,255,.18);border-radius:50%;right:-120px;top:-140px}.contact-card h2{font-size:48px;margin:13px 0}.contact-card p{color:#8ea5bd;max-width:560px}.contact-links{display:flex;flex-direction:column;border-top:1px solid var(--line)}.contact-links a{display:flex;justify-content:space-between;padding:17px 0;border-bottom:1px solid var(--line);color:#d8e6f4}.contact-links a:hover{color:#54acff}
-footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-content:space-between;font-size:11px}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
-@media(max-width:950px){
- .nav{display:none;position:absolute;top:76px;left:0;right:0;background:#07101c;padding:20px 7%;flex-direction:column;gap:0;border-bottom:1px solid var(--line)}
- .nav.open{display:flex}.nav a{padding:13px 0}.header-cta{display:none}.menu-toggle{display:block}
- .hero{grid-template-columns:1fr;min-height:auto;padding-top:130px}.hero-visual{height:520px}.hero-copy{max-width:700px}
- .skill-grid{grid-template-columns:1fr 1fr}.about-grid{grid-template-columns:1fr;gap:35px}.contact-card{grid-template-columns:1fr}
-}
-@media(max-width:620px){
- .section{padding:80px 5%}.site-header{padding:0 5%}.hero{padding-top:120px}.hero h2{font-size:17px}h1{font-size:52px}
- .hero-visual{height:470px}.avatar-placeholder{width:275px;height:370px}.orb-a{width:390px;height:390px}.orb-b{width:500px;height:500px}.floating-card{min-width:160px;padding:9px}..floating-card small{font-size:9px}.card-a{top:125px;right:-15px}.card-b{left:-5px}
- .skill-grid,.cert-grid{grid-template-columns:1fr}.timeline-item{grid-template-columns:1fr;gap:8px}.education-card{display:block}.education-card>strong{display:block;margin-top:20px}.contact-card{padding:35px 25px}.contact-card h2,.section-heading h2{font-size:37px}
- footer{flex-direction:column;gap:8px}
-}
-/* V2 polish */
-.hero{background:radial-gradient(circle at 76% 40%,rgba(22,133,255,.20),transparent 27%),linear-gradient(135deg,#03080f,#071524 70%,#04101b)}
-.hero h1{letter-spacing:-.055em}
-.section-heading h2{letter-spacing:-.045em}
-.skill-card,.stat,.education-card,.cert-card{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
-.skill-card:hover,.stat:hover,.education-card:hover,.cert-card:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(10,45,80,.10);border-color:rgba(22,133,255,.28)}
-
-.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.case-card{background:#fff;border:1px solid #dfe7ef;border-radius:16px;padding:26px;box-shadow:0 14px 34px rgba(17,42,72,.05);transition:.25s}
-.case-card:hover{transform:translateY(-4px);border-color:rgba(22,135,255,.35);box-shadow:0 22px 45px rgba(17,42,72,.10)}
-.case-card.featured{grid-column:1/-1;background:linear-gradient(145deg,#071321,#0a1d30);color:#fff;border-color:#17344e}
-.case-top{display:flex;justify-content:space-between;gap:20px;font-size:9px;font-weight:800;letter-spacing:.1em;color:#2b8bf3}
-.featured .case-top{color:#63b4ff}
-.case-top b{font-weight:600;color:#8b9caf}
-.case-card h3{font:600 24px "Space Grotesk";margin:18px 0 9px}
-.case-summary{font-size:12px;color:#6c7d91;max-width:800px}
-.featured .case-summary{color:#91a6bb}
-.case-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:23px}
-.case-flow>div{padding-top:14px;border-top:1px solid #e3eaf1}
-.featured .case-flow>div{border-color:rgba(255,255,255,.11)}
-.case-flow small{font-size:8px;font-weight:800;letter-spacing:.12em;color:#2c8ff5}
-.case-flow p{font-size:11px;color:#718196;margin:7px 0 0}
-.featured .case-flow p{color:#91a6bb}
-.case-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
-.case-tags i{font-style:normal;font-size:9px;padding:5px 8px;border-radius:99px;border:1px solid #dbe4ed;color:#62758b}
-.featured .case-tags i{border-color:#29465f;color:#a7bdd1}
-.project-note{margin-top:22px;padding:16px 18px;border-left:3px solid #2c90f5;background:#eaf4ff;color:#607188;font-size:11px}
-.project-note strong{color:#18314d}
-@media(max-width:700px){.case-grid{grid-template-columns:1fr}.case-card.featured{grid-column:auto}.case-flow{grid-template-columns:1fr}}
-
-/* V4 recruiter-focused polish */
-.focus-line{display:flex;gap:24px;align-items:center;margin-top:28px;padding:18px 0;border-top:1px solid rgba(255,255,255,.09)}
-.focus-line span{font-size:9px;font-weight:800;letter-spacing:.13em;color:#58aefc;white-space:nowrap}
-.focus-line p{margin:0;font-size:11px;color:#93a7bb;line-height:1.7}
-@media(max-width:700px){.focus-line{display:block}.focus-line p{margin-top:8px}}
-
-/* Profile photo */
-.avatar-photo {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
-
-.avatar-placeholder:before {
-  z-index: 1;
-}
-
-/* V9 — Certifications only */
-
-#certifications .cert-grid {
-  display: block;
-}
-
-#certifications .cert-group-v9 {
-  margin: 0 0 30px;
-}
-
-#certifications .cert-group-heading-v9 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0 0 12px;
-  padding: 0;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  color: inherit;
-  font-size: 15px;
-  line-height: 1.35;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
-#certifications .cert-group-icon-v9 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  flex: 0 0 24px;
-  font-size: 18px;
-  line-height: 1;
-}
-
-#certifications .cert-name-list-v9 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 10px;
-  margin: 0;
-  padding: 0 0 0 34px;
-}
-
-#certifications .cert-name-v9 {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  padding: 7px 11px;
-  border: 1px solid rgba(120,185,244,.16);
-  border-radius: 9px;
-  background: rgba(255,255,255,.025);
-  color: inherit;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 1.35;
-  transition:
-    transform .18s ease,
-    border-color .18s ease,
-    background .18s ease,
-    box-shadow .18s ease;
-}
-
-#certifications .cert-name-v9:hover {
-  transform: translateY(-2px);
-  border-color: rgba(22,133,255,.55);
-  background: rgba(22,133,255,.06);
-  box-shadow: 0 6px 18px rgba(0,0,0,.12);
-}
-
-@media (max-width:620px) {
-
-  #certifications .cert-group-v9 {
-    margin-bottom: 26px;
-  }
-
-  #certifications .cert-name-list-v9 {
-    padding-left: 0;
-  }
-
-  #certifications .cert-name-v9 {
-    width: 100%;
-  }
-
-}
-
-/* Fix hero floating cards layering */
-.hero-visual {
-  z-index: 3;
-}
-
-.avatar-placeholder {
-  z-index: 1;
-}
-
-.floating-card {
-  z-index: 10;
-}
-
-.floating-card strong,
-.floating-card small {
-  white-space: nowrap;
-}
-
-/* V6 — mobile hero layout + certification filters */
-.cert-filters{display:flex;flex-wrap:wrap;gap:8px;margin:-18px 0 20px}
-.cert-filter{border:1px solid #28425d;background:rgba(255,255,255,.03);color:#8fa7be;border-radius:999px;padding:7px 12px;font:600 11px Inter,sans-serif;cursor:pointer}
-.cert-filter:hover,.cert-filter.active{border-color:#1685ff;background:#1685ff;color:#fff}
-.credly-link{display:flex;align-items:center;gap:14px;margin-top:14px;padding:16px 20px;border:1px solid #28425d;border-radius:13px;background:rgba(255,255,255,.035);color:#dbe9f7}
-.credly-link:hover{border-color:#1685ff}
-.credly-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:#102d4a;font-size:20px}
-.credly-link strong{display:block;font-size:14px}
-.credly-link small{display:block;color:#8298ae;font-size:11px;margin-top:2px}
-
-@media(max-width:620px){
-  .hero-visual{height:555px;display:block;position:relative}
-  .avatar-placeholder{position:absolute;left:50%;top:175px;transform:translateX(-50%);z-index:2}
-  .hero-visual .orb{z-index:1}
-  .floating-card{z-index:5;min-width:150px}
-  .floating-card .icon{font-size:17px}
-  .floating-card strong{font-size:10px}
-  .floating-card small{font-size:8px}
-  .card-a{top:8px;right:4px}
-  .card-b{top:70px;left:4px;bottom:auto}
-  .card-c{top:132px;right:4px;bottom:auto}
-  .cert-filters{gap:6px;margin:-12px 0 18px}
-  .cert-filter{padding:6px 10px;font-size:10px}
-  .credly-link{margin-top:12px}
-}
-
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="noise"></div>
 
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Kim">
-      <span class="brand-mark">K</span>
-      <span>Kim</span>
+    <a class="brand" href="#top" aria-label="Omer Eisa Musa">
+      <span class="brand-mark">OM</span>
+      <span>Omer Eisa Musa</span>
     </a>
 
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
@@ -290,13 +45,14 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
       <div class="hero-copy reveal">
         <div class="eyebrow"><span class="pulse"></span> Available for professional opportunities</div>
         <p class="kicker">Hi, I'm</p>
-        <h1>Kim <span>[Last Name]</span></h1>
-        <h2>IT Administrator <i>·</i> ELV Systems <i>·</i> Network & Infrastructure</h2>
+        <h1>Omer Eisa <span>Musa</span></h1>
+        <h2>IT Officer <i>·</i> Network & Systems Support <i>·</i> MS 365 & Cloud Solutions <i>·</i> ELV</h2>
         <p class="hero-text">
-          IT professional managing Microsoft 365 tenant administration, network and firewall
-          infrastructure, ELV systems, and ERP support across multi-site construction projects.
-          Currently focused on tenant security hardening, site infrastructure reliability and
-          ELV deployment across active project sites.
+          Highly versatile IT Officer and Network Specialist with over 6 years of progressive
+          experience across comprehensive IT system administration, Microsoft 365 & Cloud
+          solutions, and Extra Low Voltage (ELV) systems. Based in Abu Dhabi, focused on
+          operational continuity across systems and networks, robust IT security policy
+          enforcement, and Active Directory & backup management.
         </p>
 
         <div class="hero-actions">
@@ -305,9 +61,9 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
         </div>
 
         <div class="socials">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="mailto:your.email@example.com" aria-label="Email">✉</a>
-          <a href="#" aria-label="WhatsApp">WA</a>
+          <a href="https://www.linkedin.com/in/omer-eisa" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="mailto:Omermusa029@gmail.com" aria-label="Email">✉</a>
+          <a href="https://wa.me/971558672519" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
         </div>
       </div>
 
@@ -316,7 +72,7 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
         <div class="orb orb-b"></div>
 
         <div class="avatar-placeholder">
-          <img class="avatar-photo" src="assets/profile.jpg" alt="Kim" onerror="this.style.display='none'">
+          <img class="avatar-photo" src="assets/profile.jpg" alt="Omer Eisa Musa" onerror="this.style.display='none'">
         </div>
 
         <div class="floating-card card-a">
@@ -343,28 +99,34 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
       <div class="about-grid">
         <div class="about-copy reveal">
           <p>
-            I am an IT professional with broad experience across <strong>Microsoft 365 tenant
-            administration</strong>, network and firewall management, ELV systems and general
-            infrastructure support. My work spans multi-site construction environments, handling
-            everything from Exchange Online mail flow to CCTV and access control deployments.
+            Highly versatile <strong>IT Officer and Network Specialist</strong> with over 6 years
+            of progressive experience, specializing in comprehensive IT system administration,
+            <strong>Microsoft 365 & Cloud solutions</strong>, and the implementation of
+            <strong>Extra Low Voltage (ELV) systems</strong>. Currently based in Abu Dhabi, my
+            role focuses on ensuring operational continuity across systems and networks,
+            enforcing robust IT security policies, and managing Active Directory and backup
+            solutions.
           </p>
           <p>
-            Currently working as an <strong>IT Administrator</strong>, I manage FortiGate firewall
-            configuration, server infrastructure, timelapse camera systems across active project
-            sites, and ERP support — coordinating closely with development and site teams to keep
-            operations running smoothly.
+            I have a proven record of success in designing, configuring, and executing
+            large-scale projects — most notably leading the installation and integration of a
+            major security project involving <strong>over 500 CCTV cameras and 85 network
+            devices</strong>. My expertise spans technical support (hardware/software
+            troubleshooting) and strategic implementation, further demonstrated by co-founding
+            <strong>F9 Information Technology</strong> to deliver tailored IT solutions.
           </p>
           <p>
-            I work best on problems that require structured troubleshooting, cross-system
-            coordination and hands-on infrastructure work — from tenant security hardening to
-            physical site deployments.
+            Passionate about proactive system management and adapting to future technology
+            challenges, including Artificial Intelligence (AI). My objective is to leverage IT
+            as a strategic business tool to drive efficiency and security, rather than merely a
+            support function.
           </p>
         </div>
 
         <div class="stats reveal">
-          <div class="stat"><strong>[X]+</strong><span>Years Experience</span></div>
-          <div class="stat"><strong>Multi</strong><span>Site Deployments</span></div>
-          <div class="stat"><strong>M365</strong><span>Tenant Administration</span></div>
+          <div class="stat"><strong>6+</strong><span>Years Experience</span></div>
+          <div class="stat"><strong>500+</strong><span>CCTV Cameras Deployed</span></div>
+          <div class="stat"><strong>85</strong><span>Network Devices Integrated</span></div>
           <div class="stat"><strong>ELV</strong><span>CCTV & Access Control</span></div>
         </div>
       </div>
@@ -435,10 +197,10 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
       <div class="timeline">
         <article class="timeline-item reveal">
           <div class="timeline-dot"></div>
-          <div class="timeline-meta">[START DATE] — PRESENT</div>
+          <div class="timeline-meta">AUG 2025 — PRESENT</div>
           <div class="timeline-main">
-            <h3>IT Administrator</h3>
-            <p class="company">Freiburg Constructing and General Maintenance</p>
+            <h3>Information Technology Officer</h3>
+            <p class="company">Freiburg Contracting & General Maintenance LLC · Abu Dhabi, UAE · On-site</p>
             <ul>
               <li>Manage Microsoft 365 tenant administration including Exchange Online, mailbox recovery and security hardening.</li>
               <li>Administer FortiGate firewall covering VPN, routing, NAT and filtering across site networks.</li>
@@ -449,7 +211,54 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
           </div>
         </article>
 
-        <!-- Add earlier roles here if you'd like them included -->
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">JAN 2024 — SEP 2025</div>
+          <div class="timeline-main">
+            <h3>Information Technology Technician</h3>
+            <p class="company">ITD Computer Equipment · Dubai, UAE · Hybrid</p>
+            <ul>
+              <li>Provided computer hardware installation, troubleshooting and support across client sites.</li>
+              <li>Handled hardware/software diagnostics and networking support as part of a broad IT service scope.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">FEB 2023 — JAN 2024</div>
+          <div class="timeline-main">
+            <h3>Technical Support Specialist</h3>
+            <p class="company">Alanfal Group · On-site</p>
+            <ul>
+              <li>Delivered hardware support and computer networking assistance across the organization.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">JUN 2020 — FEB 2023</div>
+          <div class="timeline-main">
+            <h3>Co-Founder</h3>
+            <p class="company">F9 Information Technology · Apprenticeship · Khartoum, Sudan</p>
+            <ul>
+              <li>Co-founded an IT solutions company delivering tailored infrastructure and support services to clients.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">JAN 2019 — JAN 2023</div>
+          <div class="timeline-main">
+            <h3>Information Technology Infrastructure Specialist</h3>
+            <p class="company">Alfafa Computer Company · Freelance · Khartoum, Sudan</p>
+            <ul>
+              <li>Delivered freelance IT infrastructure support and systems work for clients across Khartoum.</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -520,11 +329,10 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
 
       <div class="education-card reveal">
         <div>
-          <span class="year">[YEAR]</span>
-          <h3>[Your Degree / Institution]</h3>
-          <p>[Field of Study]</p>
+          <span class="year">2017 — PRESENT</span>
+          <h3>Almanhal Academy of Science</h3>
+          <p>Bachelor of Information Technology, Information Technology</p>
         </div>
-        <strong>[GPA]</strong>
       </div>
     </section>
 
@@ -537,18 +345,48 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
       <div class="cert-grid cert-grid-v9">
         <div class="cert-group-v9 reveal">
           <h3 class="cert-group-heading-v9">
-            <span class="cert-group-icon-v9">☁️</span>
-            <span>MICROSOFT / CLOUD</span>
+            <span class="cert-group-icon-v9">🛡️</span>
+            <span>SECURITY & MONITORING</span>
           </h3>
           <div class="cert-name-list-v9">
-            <a class="cert-name-v9" href="#" target="_blank" rel="noopener">
-              MS-102: Microsoft 365 Administrator (in progress)
-            </a>
+            <span class="cert-name-v9">MCC Certified Engineer — Monitoring And Control Center AD (Issued Jan 2024, Expires Jan 2028)</span>
+            <span class="cert-name-v9">CCTV — Kym Institut (Issued Jan 2018)</span>
           </div>
-          <p class="small-note">Add certificate links here once completed — same format as the other groups.</p>
         </div>
 
-        <!-- Add more certification groups (Security, Networking, ELV/PMP, etc.) as you complete them -->
+        <div class="cert-group-v9 reveal">
+          <h3 class="cert-group-heading-v9">
+            <span class="cert-group-icon-v9">🌐</span>
+            <span>NETWORKING</span>
+          </h3>
+          <div class="cert-name-list-v9">
+            <a class="cert-name-v9" href="#" target="_blank" rel="noopener">Fortinet FortiGate 7.4 Operator — Fortinet (Issued Dec 2024)</a>
+            <span class="cert-name-v9">Cisco Certified Network Associate Industrial (CCNA I) — Networkplus Training Center</span>
+            <span class="cert-name-v9">Certified Fiber Optic Specialist / Connectors / Termination — Networkplus Training Center</span>
+          </div>
+        </div>
+
+        <div class="cert-group-v9 reveal">
+          <h3 class="cert-group-heading-v9">
+            <span class="cert-group-icon-v9">💻</span>
+            <span>MICROSOFT / SYSTEMS</span>
+          </h3>
+          <div class="cert-name-list-v9">
+            <span class="cert-name-v9">Microsoft Certified Systems Engineer: Security (MCSE) — Networkplus Training Center</span>
+            <span class="cert-name-v9">Help Desk & Technical Support — Kym Institut</span>
+          </div>
+        </div>
+
+        <div class="cert-group-v9 reveal">
+          <h3 class="cert-group-heading-v9">
+            <span class="cert-group-icon-v9">📚</span>
+            <span>MANAGEMENT & LEARNING</span>
+          </h3>
+          <div class="cert-name-list-v9">
+            <span class="cert-name-v9">Modern Management — National Center for Youth & Students Training</span>
+            <span class="cert-name-v9">Learning How to Learn — Coursera (Issued Feb 2019)</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -561,9 +399,9 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
         </div>
 
         <div class="contact-links">
-          <a href="#" target="_blank" rel="noopener"><span>WhatsApp · [Your Number]</span><b>↗</b></a>
-          <a href="mailto:your.email@example.com"><span>Email · your.email@example.com</span><b>↗</b></a>
-          <a href="#" target="_blank" rel="noopener"><span>LinkedIn Profile</span><b>↗</b></a>
+          <a href="https://wa.me/971558672519" target="_blank" rel="noopener"><span>WhatsApp · +971 55 867 2519</span><b>↗</b></a>
+          <a href="mailto:Omermusa029@gmail.com"><span>Email · Omermusa029@gmail.com</span><b>↗</b></a>
+          <a href="https://www.linkedin.com/in/omer-eisa" target="_blank" rel="noopener"><span>LinkedIn Profile</span><b>↗</b></a>
           <a href="#projects"><span>View Projects</span><b>→</b></a>
         </div>
       </div>
@@ -571,40 +409,10 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
   </main>
 
   <footer>
-    <span>© <span id="year"></span> Kim</span>
+    <span>© <span id="year"></span> Omer Eisa Musa</span>
     <span>IT Administration · Network & ELV Systems · Infrastructure</span>
   </footer>
 
-  <script>
-/* V8 — Certifications grouped like Skills + preserve floating-card formation */
-const v8Certificates = [
-{name:'Palo Alto Networks Security Operation Fundamental',group:'SECURITY & AWARENESS',issuer:'Palo Alto Networks',url:'https://drive.google.com/file/d/1G-QB2xMYXHsvjF6GT1HqlFg8ApKtohZg/view?usp=sharing',badge:'PALO ALTO'},
-{name:'Palo Alto Cloud Security Fundamentals',group:'SECURITY & AWARENESS',issuer:'Palo Alto Networks',url:'https://drive.google.com/file/d/1LFUXKM7EDoxw4Z0B6HL9HJEfiO9i2u37/view?usp=sharing',badge:'PALO ALTO'},
-{name:'Webinar IT Cyber Security',group:'SECURITY & AWARENESS',issuer:'IT Cyber Security',url:'https://drive.google.com/file/d/13gyR4TUxTOc15w6dayOjtp6ePJ6CpZYh/view?usp=sharing',badge:'SECURITY'},
-{name:'AML Awareness',group:'SECURITY & AWARENESS',issuer:'Security Awareness',url:'https://drive.google.com/file/d/1KfFrA-gsAmL3nfI1kntJaSm9fsr4KRfN/view?usp=sharing',badge:'AML'},
-{name:'Awareness Phising',group:'SECURITY & AWARENESS',issuer:'Security Awareness',url:'https://drive.google.com/file/d/12GNtGITx8vIwD5qzLcvCzL_CBRd7T5yD/view?usp=sharing',badge:'SECURITY'},
-{name:'Webinar IT Networking',group:'NETWORKING',issuer:'IT Networking',url:'https://drive.google.com/file/d/13hSIN6LOv7tgGuDjrPIknBFxHEm7fZfO/view?usp=sharing',badge:'NETWORK'},
-{name:'Introduction to Network',group:'NETWORKING',issuer:'Networking',url:'https://drive.google.com/file/d/12EV_jsMUyz06GysXU0MrgM4HZFmtGUL4/view?usp=sharing',badge:'NETWORK'},
-{name:'CcNAv7',group:'NETWORKING',issuer:'Networking',url:'https://drive.google.com/file/d/12Gas7ybPQM3gpFrRBbkjSNHOvo88pH-q/view?usp=sharing',badge:'NETWORK'},
-{name:'Sertifikat Algoritma',group:'TECHNOLOGY',issuer:'Technology Learning',url:'https://drive.google.com/file/d/12X3c9IgNBMAEW0t3OLAT4qQsMA9_WooS/view?usp=sharing',badge:'ALGO'},
-{name:'Sertifikat IDN 2025',group:'TECHNOLOGY',issuer:'ID-Networkers',url:'https://drive.google.com/file/d/13HtEGiWh2IrDdr9Z-3l8f8uSpEo8oAuV/view?usp=sharing',badge:'IDN'},
-{name:'Cerfificate - Media Sosial',group:'OTHER',issuer:'Learning Certificate',url:'https://drive.google.com/file/d/1bP9WUmBrTmpnV1LNZpuKRgGSduSU_FRA/view?usp=sharing',badge:'OTHER'}
-];
-
-document.addEventListener('DOMContentLoaded',()=>{
- const menuToggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');
- menuToggle?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));});
- document.querySelectorAll('.nav a').forEach(l=>l.addEventListener('click',()=>{nav.classList.remove('open');menuToggle?.setAttribute('aria-expanded','false');}));
- const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.12});
- document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
- const sections=[...document.querySelectorAll('main section[id]')],links=[...document.querySelectorAll('.nav a')];
- const activeObserver=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')===`#${e.target.id}`));}),{rootMargin:'-35% 0px -55% 0px'});
- sections.forEach(s=>activeObserver.observe(s));
- const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
-
-
-});
-
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
