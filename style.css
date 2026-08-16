@@ -241,3 +241,70 @@ footer{background:#030912;color:#6e8299;padding:22px 7%;display:flex;justify-con
   .cert-filter{padding:6px 10px;font-size:10px}
   .credly-link{margin-top:12px}
 }
+
+/* nav profile avatar — circular with blue ring */
+.brand-avatar{width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center;border:2px solid var(--blue);box-shadow:0 0 0 2px rgba(22,133,255,.18);flex:0 0 auto}
+
+/* status pills — In Planning (featured card) + In progress (certs) */
+.case-status{display:inline-block;font-family:"Space Grotesk";font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#a9bcda;border:1px dashed rgba(150,170,200,.55);border-radius:20px;padding:2px 10px;margin-left:10px;vertical-align:middle}
+.cert-progress{font-style:normal;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:#7fb0ff;border:1px dashed rgba(82,168,255,.5);border-radius:20px;padding:1px 7px;margin-left:8px;white-space:nowrap}
+
+/* ===== AMC CASE STUDY MODAL ===== */
+.cs-overlay{position:fixed;inset:0;background:rgba(3,7,14,.9);backdrop-filter:blur(6px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:32px 16px;overflow-y:auto}
+.cs-overlay.open{display:flex}
+.cs-modal{background:#0b1623;border:1px solid rgba(255,255,255,.09);border-radius:20px;max-width:960px;width:100%;overflow:hidden;animation:csrise .25s ease}
+@keyframes csrise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.cs-hero{background:linear-gradient(160deg,#0d2040,#071018);padding:32px 36px 28px;border-bottom:1px solid rgba(255,255,255,.08);position:relative}
+.cs-hero .cs-close{position:absolute;top:22px;right:22px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#fff;width:36px;height:36px;border-radius:9px;cursor:pointer;font-size:18px;line-height:1;display:grid;place-items:center}
+.cs-hero .cs-close:hover{border-color:var(--blue)}
+.cs-label{font-family:"Space Grotesk";font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--blue2)}
+.cs-hero h2{font-size:clamp(20px,3vw,28px);margin:.3em 0 .5em;color:#fff;font-family:"Space Grotesk"}
+.cs-hero p{color:#8fa1b7;max-width:72ch;font-size:14.5px}
+.cs-facts{display:flex;flex-wrap:wrap;gap:24px;margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.07)}
+.cs-fact{font-size:12px;font-family:"Space Grotesk"}
+.cs-fact span{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#5e7893;margin-bottom:3px}
+.cs-body{padding:28px 36px 36px}
+.cs-body h4{font-family:"Space Grotesk";font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin:28px 0 14px}
+.cs-body h4:first-child{margin-top:0}
+.cs-scope ul{padding-left:18px;color:#8fa1b7;font-size:14px}
+.cs-scope li{margin:6px 0}
+.cs-result{color:#8fa1b7;font-size:14px;background:rgba(22,133,255,.07);border:1px solid rgba(22,133,255,.2);border-radius:12px;padding:16px 18px}
+
+/* media grid */
+.cs-media{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.cs-tile{border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden;background:#0d1f32}
+.cs-tile video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#000}
+.cs-tile img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;cursor:zoom-in}
+.cs-cap{padding:9px 12px;font-size:12px;color:#7a9ab5;font-family:"Space Grotesk";letter-spacing:.02em}
+
+/* lightbox */
+.cs-lb{position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+.cs-lb.open{display:flex}
+.cs-lb img{max-width:100%;max-height:100%;border-radius:10px}
+
+/* make case card clickable */
+.case-card{cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.case-card:hover{transform:translateY(-3px);box-shadow:0 16px 40px -20px rgba(22,133,255,.3)}
+
+/* card click hints */
+.case-cta{display:flex;align-items:center;justify-content:space-between;margin-top:16px;flex-wrap:wrap;gap:8px}
+.case-view{font-family:"Space Grotesk";font-size:12px;font-weight:600;color:var(--blue);letter-spacing:.04em;opacity:.85}
+.case-card:hover .case-view{opacity:1}
+.case-media-badge{font-family:"Space Grotesk";font-size:11px;color:#5e7893;letter-spacing:.04em}
+
+/* card flash when "View Projects" clicked */
+@keyframes cardflash{0%{border-color:var(--blue);box-shadow:0 0 0 3px rgba(22,133,255,.35)}100%{border-color:transparent;box-shadow:none}}
+.card-flash{animation:cardflash .7s ease forwards}
+
+/* ── hover photo peek ── */
+.case-card{position:relative;overflow:hidden}
+.card-peek{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);gap:3px;opacity:0;transition:opacity .3s ease;pointer-events:none;z-index:0}
+.card-peek img{width:100%;height:100%;object-fit:cover;filter:brightness(.45)}
+.card-peek::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,11,20,.15) 0%,rgba(5,11,20,.82) 100%)}
+.case-card:hover .card-peek{opacity:1}
+.case-card .case-top,.case-card h3,.case-card .case-summary,.case-card p.case-summary,.case-card .tags,.case-card .case-cta{position:relative;z-index:1}
+
+/* slideshow peek for amc (single image cycling) */
+.case-card.amc-card{overflow:hidden}
+.amc-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .6s ease;z-index:0;filter:brightness(.38)}
+.case-card.amc-card:hover .amc-slide.active{opacity:1}
